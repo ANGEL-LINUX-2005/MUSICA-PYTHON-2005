@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import subprocess
 titulo = "MUSICA DE CALIDAD"
 print(titulo.center(120))
@@ -27,12 +29,11 @@ for linea in LOGO.strip('\n').split('\n'):
 
 print('-----------------------------------------------------------')
 
-
 # Solicitar el URL del video
-url = input("Ingrese el URL del video de música: ")
+url = input("Ingrese el URL del video de musica: ")
 
-# Solicitar la ruta donde se guardará la música
-output_path = input("Ingrese la ruta donde se guardará la música: ")
+# Solicitar la ruta donde se guardara la musica
+output_path = input("Ingrese la ruta donde se guardara la musica: ")
 if not output_path.strip():
     output_path = "."
 
@@ -60,7 +61,6 @@ if stderr:
 
 # Verificar el código de salida
 if process.returncode == 0:
-    print("Música descargada exitosamente.")
+    print("Musica descargada exitosamente.")
 else:
-    print("Error en la descarga de la música.")
-
+    print("Error en la descarga de la musica.")
